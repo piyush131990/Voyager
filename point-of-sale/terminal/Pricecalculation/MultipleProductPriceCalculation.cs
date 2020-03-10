@@ -21,7 +21,7 @@ namespace point_of_sale.terminal.Pricecalculation
             }
             else
             {
-                throw new ArgumentException("Product does not exist or already scanned!");
+                throw new ArgumentException("Product does not exist or price is out of range!");
             }
 
         }
