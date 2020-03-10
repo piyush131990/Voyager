@@ -14,6 +14,11 @@ namespace point_of_sale.terminal.Pricecalculation
             {
                 this.singleproductprice = singleproductprice;
             }
+             else
+            {
+                throw new ArgumentException("Product price is out of range!");
+            }
+
 
         }
         public decimal CalculatePrice(int itemcount)
